@@ -18,4 +18,4 @@ jobs:
         java-version: '17'
 
     - name: Compilar APK de prueba
-      run: cd Login && ./gradlew assembleDebug
+      run: cd Login && chmod +x gradlew && ./gradlew assembleDebug
