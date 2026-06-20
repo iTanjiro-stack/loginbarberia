@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/inicio"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_citas"
+        android:icon="@drawable/citas"
+        android:title="Citas" />
+    <item
+        android:id="@+id/nav_historial"
+        android:icon="@drawable/historial"
+        android:title="Historial" />
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/perfil"
+        android:title="Perfil" />
+</menu>

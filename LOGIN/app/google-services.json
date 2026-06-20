@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "396624706770",
+    "project_id": "barberia-9187c",
+    "storage_bucket": "barberia-9187c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396624706770:android:92b91280883c1d4400410b",
+        "android_client_info": {
+          "package_name": "com.example.barberia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396624706770-vtffsihmksjal6rqghuie5iktqv7bq3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barberia",
+            "certificate_hash": "710f68dae0d28a5279191cd32095ddba2dcd14b9"
+          }
+        },
+        {
+          "client_id": "396624706770-bf8it4pbo83trstn203sqq01ni1apspb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv6zYSX-o0AU6tM7fkyuouWcM-IazZEQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396624706770-bf8it4pbo83trstn203sqq01ni1apspb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
