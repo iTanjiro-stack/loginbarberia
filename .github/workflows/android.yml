@@ -20,8 +20,13 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    # Buscamos el archivo usando un comodín para que lo encuentre esté en la carpeta que esté
     - name: Dar permisos de ejecucion a Gradle
-      run: chmod +x ./gradlew
+      run: chmod +x **/gradlew
 
+    # Compilamos buscando automáticamente dónde está el archivo de configuración
     - name: Compilar APK de prueba
-      run: ./gradlew assembleDebug
+      run: |
+        GRADLE_DIR=$(find . -name "gradlew" -exec dirname {} \;)
+        cd $GRADLE_DIR
+        ./gradlew assembleDebug
