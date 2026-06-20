@@ -1,3 +1,5 @@
+name: Android CI
+
 on:
   push:
     branches: [ "master" ]
@@ -7,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout del codigo
       uses: actions/checkout@v4
@@ -17,5 +20,11 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    # Paso extra para dar permisos de ejecución correctamente
+    - name: Dar permisos de ejecucion a Gradle
+      run: chmod +x ./Login/gradlew
+
+    # Compilación apuntando directamente a la subcarpeta Login
     - name: Compilar APK de prueba
-      run: cd Login && chmod +x gradlew && ./gradlew assembleDebug
+      run: ./gradlew assembleDebug
+      working-directory: ./Login
